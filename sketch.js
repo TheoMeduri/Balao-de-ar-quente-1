@@ -6,7 +6,7 @@ var balloon, balloonImg
 function preload(){
   bgImg = loadImage("assets/bg.png")
 
-  balloonImg = loadAnimation("assets/balloon1.png","assets/balloon1.png","assets/balloon1.png")
+  balloonImg = loadAnimation("assets/balloon1.png","assets/balloon2.png","assets/balloon3.png")
 }
 
 function setup(){
@@ -38,12 +38,12 @@ function draw() {
         
           //faça o balão de ar quente pular
           if(keyDown("space")) {
-            balloon.velocityX= -6 ;
+            balloon.velocityY= -6 ;
             
           }
 
           //adicione gravidade
-           balloon.velocityY = balloon.velocityX+2;
+           balloon.velocityY = balloon.velocityY+2;
    
         drawSprites();
         
